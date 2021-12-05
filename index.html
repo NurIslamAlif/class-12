@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Document</title>
+</head>
+<body>
+	<style>
+		div{text-align: center;}
+		.btn{
+    border-radius: 6px;
+    margin: 10px 20px;
+    background: #67fcff;
+    border: #67fcff;
+}
+		.btn a{
+    font-size: 18px;
+    /* font-style: normal; */
+    text-decoration: none;
+    font-weight: 800;
+}
+	</style>
+
+<button type="button" class="btn"><a href="calculater.html">Home</a></button>
+
+<div>
+
+	<input type="number" id="number" placeholder="Enter a Number">
+	<button type="button" onclick="check()">Cheak Even number</button>
+	<h1 id="display"></h1>
+
+</div>
+ <script >
+
+ 	function check(){
+ 		var a = document.getElementById('number').value;
+ 		
+ 		for ( i = 1 ; a>=i ;  i++ ){
+ 			if(i%2 == 0){
+
+ 				document.getElementById('display').innerHTML += i + 'is a Evan Number <br>'
+ 			}
+ 			
+ 		}
+ 	}
+ 	
+ </script>
+
+</body>
+</html>

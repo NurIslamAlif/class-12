@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Document</title>
+</head>
+<body>
+
+	<style>
+		div{text-align: center;}
+		.btn{
+    border-radius: 6px;
+    margin: 10px 20px;
+    background: #67fcff;
+    border: #67fcff;
+}
+.btn:hover{}
+		.btn a{
+    font-size: 18px;
+    /* font-style: normal; */
+    text-decoration: none;
+    font-weight: 800;
+}
+	</style>
+
+<button type="button" class="btn">
+	<a href="index.html">Namta</a>
+</button>
+
+	<div><input type="number" id="number" placeholder="Enter a Number">
+	<button type="button" onclick="check()">Namta</button>
+	<h1 id="display"></h1></div>
+<script>
+	
+	var a = '';
+	var b = 10;
+	function check(){
+		var number = document.getElementById('number').value;
+		for(i=1 ; b>= i; i++){
+			a += number + '+'+ i +'='+ number*i +'<br>' ;
+			document.getElementById('display').innerHTML = a;
+		}
+	}
+</script>
+
+</body>
+</html>
